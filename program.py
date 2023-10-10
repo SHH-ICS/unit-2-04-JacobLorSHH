@@ -5,9 +5,14 @@
 # For multiples of 5, output   Buzz
 # For multiples of 15, output   FizzBuzz
 # End at 32
+for i in range(32):
+  myNumber = i+1
+  result = myNumber
+  if result % 15 == 0:
+    result = 'fizzbuzz'
+  elif myNumber % 3 == 0:
+    result = 'fizz'
+  elif myNumber % 5 == 0:
+    result = 'buzz'
+  print(result)
 
-result = ""
-for myNumber in range(32):
-  result = str(result) + str(myNumber) + "\n"
-
-print(result)
